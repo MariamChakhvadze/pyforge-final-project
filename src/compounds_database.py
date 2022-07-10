@@ -31,7 +31,7 @@ class CompoundsDatabase:
         self.compounds = Table(
             "compounds",
             metadata,
-            Column("id", Integer, primary_key=True),  # შესაძლოა წასაშლელია ეს
+            Column("id", Integer, primary_key=True),
             Column("compound", String(3), unique=True),
             Column("name", String(160)),
             Column("formula", String(20)),
